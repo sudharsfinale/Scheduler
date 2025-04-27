@@ -1,4 +1,4 @@
-import { BORDER_RADIUS, COLOR, SPACING } from "@/constants/scheduler_constants";
+import { BORDER_RADIUS, COLOR, SPACING } from "@/app/constants/scheduler_constants";
 import { Text, View } from "react-native";
 
 const HourBlock = ({ block }: { block: number }) => {

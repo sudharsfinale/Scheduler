@@ -6,14 +6,10 @@ import {
   SPACING,
   START_HOUR,
   COLOR,
-  ENTERING,
-  EXITING,
-  LAYOUT_ANIMATION,
-  AnimatedPressable,
-} from "@/constants/scheduler_constants";
-// import { Plus } from 'lucide-react-native';
+} from "@/app/constants/scheduler_constants";
 import { Plus, X } from "lucide-react-native";
 import HourBlock from "./HourBlock";
+import { AnimatedPressable, ENTERING, EXITING, LAYOUT_ANIMATION } from "./Scheduler";
 
 const DayBlock = () => {
   const [hours, setHours] = useState([START_HOUR]);

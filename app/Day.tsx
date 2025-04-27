@@ -3,12 +3,12 @@ import React, { useState } from "react";
 import {
   BORDER_RADIUS,
   COLOR,
-  LAYOUT_ANIMATION,
   PRIMARY_COLOR,
   SPACING,
-} from "@/constants/scheduler_constants";
+} from "@/app/constants/scheduler_constants";
 import DayBlock from "./DayBlock";
 import Animated from "react-native-reanimated";
+import { LAYOUT_ANIMATION } from "./Scheduler";
 interface DayProps {
   day: string;
 }
@@ -39,6 +39,7 @@ const Day = (props: DayProps) => {
           trackColor={{ true: PRIMARY_COLOR }}
           value={isOn}
           onValueChange={(value) => setIsOn(value)}
+          //@ts-ignore
           style={{
             transform: [{ scale: 0.7 }],
             transformOrigin: ["100%", "50%", 0],
